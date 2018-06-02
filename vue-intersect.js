@@ -1,3 +1,5 @@
+import 'intersection-observer';
+
 const defaultConfig = {
     threshold: 0,
     root: null,
