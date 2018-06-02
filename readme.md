@@ -73,7 +73,7 @@ Passing a `Function` creates an `IntersectionObserver` using the default
 configurations. If you want to specify custom configurations, you should pass
 an `Object` to the `v-intersect` directive, which can contain the following keys:
 
-- `callback`: Required.
+- `callback`: `Function`. Required.
 - `threshold`: `Number` or `Array`. Optional, defaults to `0`.
 - `root`: `HTMLElement`. Optional, defaults to `null`, which corresponds to the
     viewport itself.
