@@ -27,10 +27,10 @@ First, load the plugin. Depending on the environment, you have several options:
 import VueIntersect from '@arnellebalane/vue-intersect';
 
 # AMD, e.g. RequireJS
-require(['path/to/vue-intersect/dist/index.js'], (VueIntersect) => { /**/ });
+require(['path/to/vue-intersect/dist/vue-intersect.js'], (VueIntersect) => { /**/ });
 
 # <script>, exposed as `VueIntersect`.
-<script src="path/to/vue-intersect/dist/index.js"></script>
+<script src="path/to/vue-intersect/dist/vue-intersect.js"></script>
 ```
 
 Then, tell Vue to use the plugin:

@@ -2,9 +2,9 @@
   "name": "@arnellebalane/vue-intersect",
   "version": "1.0.0",
   "description": "VueJS plugin that reports element intersections using the IntersectionObserver API",
-  "main": "index.js",
+  "main": "vue-intersect.js",
   "scripts": {
-    "build": "parcel build index.js --global VueIntersect"
+    "build": "parcel build vue-intersect.js --global VueIntersect"
   },
   "keywords": [
     "vuejs",
