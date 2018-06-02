@@ -11,6 +11,10 @@
     "plugin",
     "intersection-observer"
   ],
+  "files": [
+    "dist",
+    "vue-intersect.js"
+  ],
   "author": "Arnelle Balane <arnellebalane@gmail.com> (https://arnellebalane.com/)",
   "license": "MIT",
   "devDependencies": {
