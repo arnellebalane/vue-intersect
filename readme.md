@@ -20,12 +20,22 @@ $ yarn add @arnellebalane/vue-intersect
 
 ## Usage
 
-First, let Vue use the plugin:
+First, load the plugin. Depending on the environment, you have several options:
 
 ```js
-import Vue from 'vue';
+# ES6
 import VueIntersect from '@arnellebalane/vue-intersect';
 
+# AMD, e.g. RequireJS
+require(['path/to/vue-intersect/dist/index.js'], (VueIntersect) => { /**/ });
+
+# <script>, exposed as `VueIntersect`.
+<script src="path/to/vue-intersect/dist/index.js"></script>
+```
+
+Then, tell Vue to use the plugin:
+
+```js
 Vue.use(VueIntersect);
 ```
 
