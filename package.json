@@ -4,7 +4,7 @@
   "description": "VueJS plugin that reports element intersections using the IntersectionObserver API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build index.js --global VueIntersect"
   },
   "keywords": [
     "vuejs",
@@ -12,5 +12,8 @@
     "intersection-observer"
   ],
   "author": "Arnelle Balane <arnellebalane@gmail.com> (https://arnellebalane.com/)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "1.8.1"
+  }
 }
