@@ -1,0 +1,16 @@
+{
+  "name": "vue-intersect",
+  "version": "1.0.0",
+  "description": "VueJS plugin that reports element intersections using the IntersectionObserver API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vuejs",
+    "plugin",
+    "intersection-observer"
+  ],
+  "author": "Arnelle Balane <arnellebalane@gmail.com> (https://arnellebalane.com/)",
+  "license": "MIT"
+}
