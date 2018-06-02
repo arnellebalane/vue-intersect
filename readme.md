@@ -82,6 +82,11 @@ an `Object` to the `v-intersect` directive, which can contain the following keys
 I wrote [an article][3] explaning what the IntersectionObserver API and its
 terminologies.
 
+
+## License
+
+MIT License
+
 [1]: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 [2]: https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry
 [3]: https://blog.arnellebalane.com/the-intersection-observer-api-d441be0b088d
