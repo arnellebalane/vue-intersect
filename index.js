@@ -1,7 +1,17 @@
 const defaultConfig = {
     threshold: 0,
-    root: null
+    root: null,
+    rootMargin: '0px'
 };
+
+function except(object, keys) {
+    return Object.keys(object).reduce((reduced, key) => {
+        if (!keys.includes(key)) {
+            reduced[key] = object[key];
+        }
+        return reduced;
+    }, {});
+}
 
 function parseIntersectValue(value) {
     return typeof value === 'function'
@@ -14,7 +24,12 @@ export default {
         Vue.directive('intersect', {
             inserted(el, {value}) {
                 const config = parseIntersectValue(value);
-                console.log(config);
+
+                const observer = new IntersectionObserver(([entry]) => {
+                    config.callback(entry);
+                }, except(config, ['callback']));
+
+                observer.observe(el);
             }
         });
     }
