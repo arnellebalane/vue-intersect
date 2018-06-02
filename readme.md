@@ -23,13 +23,15 @@ $ yarn add @arnellebalane/vue-intersect
 First, load the plugin. Depending on the environment, you have several options:
 
 ```js
-# ES6
+// ES6
 import VueIntersect from '@arnellebalane/vue-intersect';
 
-# AMD, e.g. RequireJS
+// AMD, e.g. RequireJS
 require(['path/to/vue-intersect/dist/vue-intersect.js'], (VueIntersect) => { /**/ });
+```
 
-# <script>, exposed as `VueIntersect`.
+```html
+<!-- <script>, exposed as `VueIntersect`. -->
 <script src="path/to/vue-intersect/dist/vue-intersect.js"></script>
 ```
 
