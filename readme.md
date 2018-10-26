@@ -33,6 +33,9 @@ require(['path/to/vue-intersect/dist/vue-intersect.js'], (VueIntersect) => { /**
 ```html
 <!-- <script>, exposed as `VueIntersect`. -->
 <script src="path/to/vue-intersect/dist/vue-intersect.js"></script>
+
+<!-- or if you wanna load it via CDN (unpkg) -->
+<script src="https://unpkg.com/@arnellebalane/vue-intersect@latest/dist/vue-intersect.umd.js"></script>
 ```
 
 Then, tell Vue to use the plugin:
