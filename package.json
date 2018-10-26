@@ -18,6 +18,7 @@
   "author": "Arnelle Balane <arnellebalane@gmail.com> (https://arnellebalane.com/)",
   "license": "MIT",
   "devDependencies": {
+    "microbundle": "0.7.0",
     "parcel-bundler": "1.8.1"
   },
   "dependencies": {
