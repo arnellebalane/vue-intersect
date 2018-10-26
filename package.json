@@ -5,7 +5,10 @@
   "main": "dist/vue-intersect.js",
   "source": "vue-intersect.js",
   "scripts": {
-    "build": "parcel build vue-intersect.js --global VueIntersect"
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "build": "microbundle --name VueIntersect --external none",
+    "build:watch": "npm run build -- --watch"
   },
   "keywords": [
     "vuejs",
