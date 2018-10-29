@@ -63,6 +63,22 @@ The value passed to the `v-intersect` directive is described in the
 [**API**](#api) section.
 
 
+### IntersectionObserver Polyfill
+
+This plugin uses the IntersectionObserver API under the hood. If a target
+browser does not support the API, we can use a polyfill for it.
+
+However, as of v2.0.0 of this plugin, the polyfill for the IntersectionObserver
+API is not bundled anymore. This means that if you want to support browsers
+that don't natively support the API, you'd have to load the polyfill yourself.
+
+This keeps the package size of this plugin very small and also keeps users from
+having to unnecessarily download the polyfill even when their browsers already
+support the IntersectionObserver API natively.
+
+You may check out [intersection-observer][4] for steps on how to use the polyfill.
+
+
 ## API
 
 The `v-intersect` accepts either a `Function` or an `Object`.
@@ -93,3 +109,4 @@ MIT License
 [1]: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 [2]: https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry
 [3]: https://blog.arnellebalane.com/the-intersection-observer-api-d441be0b088d
+[4]: https://www.npmjs.com/package/intersection-observer
